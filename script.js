@@ -4,6 +4,7 @@ $(document).ready(function () {
         () {
         var toAdd = $(`input[name=listItem]`).val();
         $(`ul`).append(`<li>` + toAdd + `</li>`);
+            $(`input[name=listItem]`).val();
     }
     )
     $(document).on(`dblclick`, `li`, function () {
@@ -16,3 +17,4 @@ $(document).ready(function () {
     $(`ul`).sortable();
 
 })
+
